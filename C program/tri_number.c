@@ -3,14 +3,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-   int A,B,C,help;
+int main()
+{
+    int A, B, C, help;
 
-   printf("Enter your 3 numbers.\n");
-   scanf("%d %d %d",&A,&B,&C);
+    printf("Enter your 3 numbers.\n");
+    scanf("%d %d %d", &A, &B, &C);
 
-   help = A;
-
-   if()
-
+    if (B > A)
+    {
+        help = A;
+        A = B;
+        B = help;
+    }
+    else if (C > B)
+    {
+        help = B;
+        B = C;
+        C = help;
+    }
+    else if (A > C)
+    {
+        help = C;
+        C = A;
+        A = help;
+    }
+    printf("The sort by decreasing is %d, %d, %d.\n", A, B, C);
+    return 0;
 }
