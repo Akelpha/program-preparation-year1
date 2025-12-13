@@ -14,11 +14,11 @@ int main (){
     if(d>0){
        x1= (-b+sqrt(d))/2*a;
        x2= (-b-sqrt(d))/2*a;
-       printf("the solution of your equation is %2f for X1 and %2f for X2.\n",x1,x2);
-    }else if(d=0){
+       printf("the solution of your equation is %.2f for X1 and %.2f for X2.\n",x1,x2);
+    }else if(d==0){
         x1=-b/2*a;
         x1=x2;
-        printf("the solution of your equation is %2f for X1 and %2f for X2(there are egal).\n",x1,x2);
+        printf("the solution of your equation is %.2f for X1 and %.2f for X2(there are egal).\n",x1,x2);
     }else{
         printf("the solution is not real.\n");
     }
