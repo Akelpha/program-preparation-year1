@@ -1,4 +1,4 @@
-// Écrire un programme en C qui permet de demander à l'utilisateur de saisir un entier entre 1 et 7 au clavier, et affiche le nom du jour correspondant.
+// TD2:Ex3 Écrire un programme en C qui permet de demander à l'utilisateur de saisir un entier entre 1 et 7 au clavier, et affiche le nom du jour correspondant.
 
 #include <stdio.h>
 #include <stdlib.h>

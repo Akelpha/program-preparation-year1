@@ -1,4 +1,4 @@
-// Écrire un programme qui calcule et affiche les solutions d'une équation du second degré de la forme ax2+ bx+c=0.
+//TD2:Ex2 Écrire un programme qui calcule et affiche les solutions d'une équation du second degré de la forme ax2+ bx+c=0.
 
 #include <stdio.h>
 #include <stdlib.h>

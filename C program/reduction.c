@@ -1,4 +1,4 @@
-/*Ecrire un programme en C permettant de saisir le prix unitaire et la quantité commandée d'un
+/*TD2:Ex7Ecrire un programme en C permettant de saisir le prix unitaire et la quantité commandée d'un
 article. Le programme affichera le prix à payer, le port, et la remise sachant que :
 - le port est gratuit si le montant hors taxe est supérieur à 1000 dhs
 - le port est 3% dans le cas contraire

@@ -1,4 +1,4 @@
-// Écrire un programme qui affiche le minimum de 3 entiers saisis au clavier.
+// TD2:Ex1 Écrire un programme qui affiche le minimum de 3 entiers saisis au clavier.
 
 #include <stdio.h>
 #include <stdlib.h>

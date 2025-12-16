@@ -1,4 +1,4 @@
-/*Écrire un programme qui calcule et affiche la distance entre deux points A et B du plan dont les coordonnées (XA , YA) et (XB , YB) sont entrées au clavier comme entiers.*/
+/* TD1:Ex6 Écrire un programme qui calcule et affiche la distance entre deux points A et B du plan dont les coordonnées (XA , YA) et (XB , YB) sont entrées au clavier comme entiers.*/
 
 #include <stdio.h> 
 #include <stdlib.h>

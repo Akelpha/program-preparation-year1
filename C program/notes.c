@@ -1,4 +1,4 @@
-// Écrire un programme qui demande à l'utilisateur de saisir les notes de 4 matières d'un étudiant et de saisir les coefficients correspondants à chaque matière, puis le programme calcule la moyenne des 4 notes et affiche la moyenne finale de l'étudiant avec 2 chiffres après la virgule.
+// TD1:Ex4 Écrire un programme qui demande à l'utilisateur de saisir les notes de 4 matières d'un étudiant et de saisir les coefficients correspondants à chaque matière, puis le programme calcule la moyenne des 4 notes et affiche la moyenne finale de l'étudiant avec 2 chiffres après la virgule.
 
 #include <stdio.h>
 #include <stdlib.h>
