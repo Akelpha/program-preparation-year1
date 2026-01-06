@@ -1,3 +1,5 @@
+// TD3:EX4 Ecrire un programme qui demande un nombre compris entre 10 et 20, jusqu’à ce que la réponse convienne. En cas de réponse supérieure à 20, on fera apparaître un message : « Plus grand !», et inversement, « Plus petit ! » si le nombre est inférieur à 10.
+
 #include <stdio.h>
 #include <stdlib.h>
 
