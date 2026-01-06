@@ -16,17 +16,19 @@ int main()
         A = B;
         B = help;
     }
-    else if (C > B)
+    
+    if (A < C)
+    {
+        help = A;
+        A = C;
+        C = help;
+    }
+
+    if (B < C)
     {
         help = B;
         B = C;
         C = help;
-    }
-    else if (A > C)
-    {
-        help = C;
-        C = A;
-        A = help;
     }
     printf("The sort by decreasing is %d, %d, %d.\n", A, B, C);
     return 0;
