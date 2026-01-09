@@ -15,5 +15,21 @@ int main(){
  }
  while(n<1);
  printf("the sum is %d",sum);
+
+ /*
+ or
+ int n,s;
+ s=0;
+ do{
+ printf("Saisir n");
+ scanf("%d",&n);
+ }while(n<=1)
+
+ for(int i=0;i<=n;i++){
+   s=s+i;
+ }
+ printf("la somme est %d",s)
+ 
+ */
  return 0;
 }

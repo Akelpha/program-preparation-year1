@@ -10,11 +10,14 @@ int main()
     fact = 1;
     printf("Enter a number.\n");
     scanf("%d", &n);
-    for (int i = 1;i<=n;i++){
-
+    if(n==0){
+            fact = 1;
+        }
+    for (int i = 1; i <= n; i++)
+    {
+        
         fact = fact * i;
-
     }
-    printf("the factorial of %d is %d.",n,fact);
+    printf("the factorial of %d is %d.", n, fact);
     return 0;
 }

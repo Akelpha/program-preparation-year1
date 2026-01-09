@@ -4,13 +4,20 @@
 #include <stdlib.h>
 
 int main(){
-     int n,ans;
      
-    printf("Enter your multiplcation tablet number.\n");
-    scanf("%d",&n);
-    for(int i=0;i<=10;i++){
-        ans = n*i;
-        printf("%d multiplies by %d = %d\n",n,i,ans);
+     
+    // printf("Enter your multiplcation tablet number.\n");
+    // scanf("%d",&n);
+    // for(int i=0;i<=10;i++){
+    //     ans = n*i;
+    //     printf("%d multiplies by %d = %d\n",n,i,ans);
+    // }
+
+    for(int i = 1;i<=9;i++){
+        for(int j= 1; j<=9;j++){
+            int ans = i*j;
+            printf("%d multiply by %d = %d\n",i,j,ans);
+        }
     }
     return 0;
 }
