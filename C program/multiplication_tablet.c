@@ -14,9 +14,11 @@ int main(){
     // }
 
     for(int i = 1;i<=9;i++){
+        printf("La table de multiplication de %d\n",i);
         for(int j= 1; j<=9;j++){
             int ans = i*j;
-            printf("%d multiply by %d = %d\n",i,j,ans);
+            // printf("%d x %d \n",n,i,n*i)
+            printf("%d multiplied by %d = %d\n",i,j,ans);
         }
     }
     return 0;
