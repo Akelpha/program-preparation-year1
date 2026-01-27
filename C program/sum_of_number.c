@@ -4,32 +4,32 @@
 #include <stdlib.h>
 
 int main(){
- int n,sum;
+//  int n,sum;
 
- sum =0;
+//  sum =0;
 
- do{
-  printf("Enter a number above 1.\n");
-  scanf("%d",&n);
-  sum = (n*(n+1))/2;
- }
- while(n<1);
- printf("the sum is %d",sum);
+//  do{
+//   printf("Enter a number above 1.\n");
+//   scanf("%d",&n);
+//   sum = (n*(n+1))/2;
+//  }
+//  while(n<1);
+//  printf("the sum is %d",sum);
 
- /*
- or
+ 
+ 
  int n,s;
  s=0;
  do{
  printf("Saisir n");
  scanf("%d",&n);
- }while(n<=1)
+ }while(n<=1);
 
- for(int i=0;i<=n;i++){
+ for(int i=1;i<=n;i++){
    s=s+i;
  }
- printf("la somme est %d",s)
+ printf("la somme est %d",s);
  
- */
+ 
  return 0;
 }
