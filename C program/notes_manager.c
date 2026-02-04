@@ -5,12 +5,12 @@ Tu écris un programme qui :
 ✔️ stocke leurs notes dans un tableau
 ✔️ propose un menu avec plusieurs options
 Menu:
-1. Saisir les notes
-2. Afficher les notes
-3. Calculer la grade_point_average
-4. Afficher la meilleure note
-5. Afficher les notes supérieures à la grade_point_average
-0. Quitter
+1. Saisir les notes✔️
+2. Afficher les notes✔️
+3. Calculer la grade_point_average✔️
+4. Afficher la meilleure note✔️
+5. Afficher les notes supérieures à la grade_point_average✔️
+0. Quitter✔️
 Cours	Note
 Math	15.5
 Phys	12.0
