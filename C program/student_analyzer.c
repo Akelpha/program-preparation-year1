@@ -42,6 +42,7 @@ void saisirNotes(int M, int N, float T[][N])
 {
     for (int i = 0; i < M; i++)
     {
+        printf("Enter your notes.\n");
         for (int j = 0; j < N; j++)
         {
             scanf("%f", &T[i][j]);
@@ -54,17 +55,17 @@ void afficheNotes(int M, int N, float T[][N])
     {
         for (int j = 0; j < N; j++)
         {
-            printf(" T[%d][%d]= %d \n", i, j, T[i][j]);
+            printf(" T[%d][%d]= %.2f \n", i, j, T[i][j]);
         }
     }
 }
-float moyenneMatiere(int M, int N, float T[][N])
+float moyenneMatiere(int idx, int N, float T[][N])
 {
     float sumM = 0;
 
     for (int j = 0; j < N; j++)
     {
-        sumM += T[M][j];
+        sumM += T[idx][j];
     }
 
     return sumM / N;
@@ -82,18 +83,18 @@ float moyenneGen(int M, int N, float T[][N])
 }
 float bestNote(int M, int N, float T[][N])
 {
-    int imax = 0;
-    for (int i = 0; i < N; i++)
+    float max = T[0][0];
+    for (int i = 0; i < M; i++)
     {
-        for (int j = 0; j < M; j++)
+        for (int j = 0; j < N; j++)
         {
-            if (T[i][j] > T[i][imax])
+            if (T[i][j] > max)
             {
-                imax = j;
+                max = T[i][j];
             }
         }
     }
-    return T[M][imax];
+    return max;
 }
 float mostDifficultMat(int M, int N, float T[][N])
 {
@@ -138,7 +139,7 @@ int main()
     int choice;
     do
     {
-        printf("\nMenu:\n1.Saisir les notes\n2.Afficher toutes les notes\n3.Moyenne par matière\n4.Moyenne par matière\n5.Moyenne générale\n6.Matière la plus difficile(moyenne la plus basse)\n0.Quitter\n");
+        printf("\nMenu:\n1.Saisir les notes\n2.Afficher toutes les notes\n3.Moyenne par matière\n4.Moyenne générale\n5.Meilleure note(globale)\n6.Matière la plus difficile(moyenne la plus basse)\n0.Quitter\n");
         scanf("%d", &choice);
         switch (choice)
         {
@@ -149,8 +150,20 @@ int main()
             afficheNotes(M, N, T);
             break;
         case 3:
-            printf("The GPA of %s is %.2f", CName, moyenneMatiere(M, N, T));
+        {
+            int idx;
+            printf("Enter course index (0..%d): ", M - 1);
+            scanf("%d", &idx);
+            if (idx >= 0 && idx < M)
+            {
+                printf("The GPA of %s is %.2f", CName[idx], moyenneMatiere(idx, N, T));
+            }
+            else
+            {
+                printf("Invalid course index.\n");
+            }
             break;
+        }
         case 4:
             printf("The GPA general is %.2f", moyenneGen(M, N, T));
             break;
@@ -158,13 +171,15 @@ int main()
             printf("The best note is %.2f", bestNote(M, N, T));
             break;
         case 6:
-            printf("The most difficult course is %.2f", mostDifficultMat(M, N, T));
+            printf("The most difficult course is %.2f(The lowest GPA)", mostDifficultMat(M, N, T));
+            break;
         case 0:
             printf("Bye!" );
+            break;
         default:
             printf("Invalid choice.\n");
             break;
         }
-    } while (choice < 6);
+    } while (choice != 0);
     return 0;
 }
