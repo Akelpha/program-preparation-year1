@@ -7,17 +7,20 @@ posnumber =0
 for i in range(0,20,1):
     a = float(input("Entrez un reel : "))
 
-    if(a<0):
-        sumneg = sumneg + a
+    if a<0 :
+        sumneg += a
         negnumber +=1
-        moyneg = sumneg/negnumber
+        
 
-    elif(a>0):
-        sumpos = sumpos + a
+    elif a>0:
+        sumpos += a
         posnumber +=1
-        moypos = sumpos/posnumber
-    else:
-        moyneg =0
-        moypos =0
+        
     
-print("la valeur de la moyenne des nombres positif est ",moypos," et des nombres negatifs est ",moyneg)
+if posnumber != 0:
+    print(f"la valeur de la moyenne des nombres positif est {sumpos/posnumber}" )
+
+if negnumber != 0:
+    print(f"la valeur de la moyenne des nombres positif est {sumpos/negnumber}" )
+
+

@@ -13,15 +13,15 @@ tant que l’accès est refusé,
 sauf si le nombre de tentatives atteint 3."""
 
 name = input("What is your name ?")
-age = int(input("What is your age?"))
 tentative = 0
 
 while tentative < 3 :
-    name = input("What is your name ?")
     age = int(input("What is your age?"))
     if(age < 18):
-        print("Access denied")
+        print("Access denied!")
         tentative +=1
-    break
-if(tentative>=3):
+    else:
+        print("Acces accepted!")
+        break
+if(tentative == 3):
     print("Tentative number reached!!")

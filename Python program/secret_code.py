@@ -12,15 +12,6 @@
 # égal → afficher “Bravo” + sortir de la boucle
 # Ce que tu vas utiliser
 
-# while
-
-# if / elif / else
-
-# variables
-
-# compteur
-
-# comparaison
 # TODO : utiliser la bibliothèque random pour générer le nombre secret aléatoire quand je comprendrai mieux
 
 secret_number= 94;
