@@ -3,7 +3,7 @@ Un nombre n est dit triangulaire s’il existe un k > 0 tel que : n=1+2+…+k
 Exemple : 15 est un nombre triangulaire car 15=1+2+3+4+5"""
 
  
-
+# TODO: je dois arranger ca aussi , faire encore sorte que ca gere les nombre triangulaire
 def triangulaire(n):
     t = (n**2+n)/2
     if n == t:

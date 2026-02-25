@@ -1,0 +1,1 @@
+"""Un palindrome est un mot dont l'ordre des lettres reste le même si on le lit de gauche à droite ou de droite à gauche. Par exemple : 'laval', 'radar, 'sos'... sont des palindromes. Ecrire un programme en Python qui demande à l'utilisateur de saisir un mot et de lui renvoyer s'il s'agit d'un palindrome ou non ?"""

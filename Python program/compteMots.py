@@ -1,0 +1,1 @@
+"""Ecrire une fonction compteMots(phrase) qui renvoie le nombre de mots contenus dans la phrase "phrase". On considère comme mots les ensembles de caractères inclus entre des espaces."""
