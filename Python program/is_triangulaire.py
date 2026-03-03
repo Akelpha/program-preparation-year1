@@ -5,14 +5,20 @@ Exemple : 15 est un nombre triangulaire car 15=1+2+3+4+5"""
  
 # TODO: je dois arranger ca aussi , faire encore sorte que ca gere les nombre triangulaire
 def triangulaire(n):
-    t = (n**2+n)/2
-    if n == t:
+    s = 0
+    k=0
+    while s < n:
+        s +=k
+        k+=1
+    if s == n:
         return 1
     else: 
         return 0
 
 
 
-
 n = int(input("Enter a number"))
-print(triangulaire(n))
+if triangulaire(n):
+    print(f"{n} est un nombre triangulaire ")
+else:
+    print(f"{n} n'est pas un nombre triangulaire ")
