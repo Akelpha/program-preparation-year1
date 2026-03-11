@@ -1,7 +1,7 @@
 """Ecrire un programme python qui demande a l'utilisateur de saisr un nombre entier n et de lui afficher si ce nombre est premier ou non"""
 
 def premier(n):
-    for i in range(2,n,1):
+    for i in range(2,n):
         if n % i==0:
             print(f"{n} n'est pas premier")
             break

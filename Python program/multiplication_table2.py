@@ -6,10 +6,10 @@
 
 # (1)
 
-"""
+
 n = int(input("Enter a number"))
-for i in range(10):
-    print(f"{n} * {i} = {n*i}" )"""
+for i in range(11):
+    print(f"{n} * {i} = {n*i}" )
 # (2)
 for i in range(1,8,1):
     print(f"The multiplication table of {i}")
