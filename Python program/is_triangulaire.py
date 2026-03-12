@@ -16,7 +16,6 @@ def triangulaire(n):
         return 0
 
 
-
 n = int(input("Enter a number"))
 if triangulaire(n):
     print(f"{n} est un nombre triangulaire ")
