@@ -6,7 +6,7 @@ accéder au dernier jour de la semaine. - Inversez les jours de la semaine en un
 
 WeekList = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 print(WeekList[ : 5: ])
-print(WeekList[ -3: : 1])
+print(WeekList[ -7: -2: 1])
 print(WeekList[-2: : ])
-print(WeekList[ 4: : ]) 
+print(WeekList[ 5: : ]) 
 print(WeekList[ : : -1])
