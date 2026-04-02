@@ -6,9 +6,9 @@ def oddEven(liste):
     listOdd = []
     for i in range(len(liste)):
         if i % 2 == 0:
-            listEven.append(i)
+            listEven.append(liste[i])
         elif i % 2 != 0:
-            listOdd.append(i)
+            listOdd.append(liste[i])
     print(listEven)
     print(listOdd)
 
