@@ -4,13 +4,15 @@ l’utilisateur, et qui renvoie le nombre d’éléments de la liste qui sont di
 
 
 def nombreDivisible(L):
+    count = 0
     n = int(input("Enter a integer: "))
     for i in range(len(L)):
         if L[i] % n == 0:
-            print(L[i])
+            count +=1
+    return count
 
     
     
 
 L = [12 , 4 , 14 , 11 , 18 , 13 , 7, 10 , 5 , 9 , 15 , 8 , 14 , 16]
-nombreDivisible(L)
+print(nombreDivisible(L))

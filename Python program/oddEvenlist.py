@@ -5,12 +5,15 @@ def oddEven(liste):
     listEven = []
     listOdd = []
     for i in range(len(liste)):
-        if i % 2 == 0:
+        if L[i] % 2 == 0:
             listEven.append(liste[i])
-        elif i % 2 != 0:
+        elif L[i] % 2 != 0:
             listOdd.append(liste[i])
     print(listEven)
     print(listOdd)
-
-liste = [1,2,3,4,5,6,7,8,9,10,11,12,141,15,16,18,19,20,24,25,256,43]
-oddEven(liste)
+L = []
+n = int(input("Enter the list length: "))
+for i in range(n):
+    x = int(input("Enter the element: "))
+    L.append(x)
+oddEven(L)

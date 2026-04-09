@@ -1,9 +1,10 @@
 """Ecrire une fonction qui prend en argument une liste de mots et affiche deux listes ; la
 première liste contient les mots de moins de six lettres, la seconde contient les mots de six
 lettres ou plus."""
-aboveSixLetters = []
-belowSixLetters =[]
+
 def sixLetters(L):
+    aboveSixLetters = []
+    belowSixLetters =[]
     for x in L:
         if len(x)>= 6:
             aboveSixLetters.append(x)
