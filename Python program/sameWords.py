@@ -1,8 +1,8 @@
 """Ecrire un programme Python qui permet de regrouper dans une liste les mots communs à
 deux chaines s1 et s2."""
 
-s1 = input("Enter a phrase 1").split()
-s2 = input("Enter a phrase 2").split()
+s1 = input("Enter a phrase 1: ").split()
+s2 = input("Enter a phrase 2: ").split()
 communWord = []
 print(s1,s2)
 for i in range(len(s1)):

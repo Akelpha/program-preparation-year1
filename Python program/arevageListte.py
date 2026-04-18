@@ -9,12 +9,12 @@ de toutes ces notes."""
 notes = [12 , 4 , 14 , 11 , 18 , 13 , 7, 10 , 5 , 9 , 15 , 8 , 14 , 16]
 above10=[]
 arevageBel = []
-s = sum(notes)
-moyenne = s / len(notes)
+
+moyenne = sum(notes)/ len(notes)
 for i in range(len(notes)):
     if notes[i] >= 10 :
           above10.append(notes[i])
-    elif notes[i]<moyenne:
+    if notes[i]<moyenne:
          arevageBel.append(notes[i])
 print(above10)
 print(arevageBel)

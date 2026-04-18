@@ -18,5 +18,9 @@ def inf_moy(liste):
     return listMoy
 
 
-L = [3, 8, 11, 14, 5, 20, 7, 2, 9, 16, 1, 18, 13, 6, 15, 4, 19, 10, 17, 12]
+L = []
+n = int(input("Enter the list length: "))
+for i in range(n):
+    x = int(input("Enter the element: "))
+    L.append(x)
 print(inf_moy(L))
