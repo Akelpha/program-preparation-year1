@@ -10,8 +10,10 @@ def moyenne(liste):
             s += x
     moyenne = s/count
     return moyenne
-
-
-L = [4,7,9,12,5,6,8]
+L=[]
+n= int(input("Entrer the length of the list: "))
+for i in range(n):
+    x= int(input("Enter a interger: "))
+    L.append(x)
 
 print(moyenne(L))
