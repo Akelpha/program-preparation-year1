@@ -15,3 +15,18 @@ repectoire = {
     "Noura": "0614656812"
 }
 
+print(repectoire["Noura"])
+if "Fatima" in repectoire:
+      print("Fatime se trouve dans le repertoire")
+else:
+      print("Fatime ne se trouve pas dans le repertoire")
+
+repectoire["Marie"]="0687654329"
+repectoire["Rania"]="0789898989"
+print(repectoire)
+del repectoire["Hanae"]
+#this
+for key,value in repectoire.items():
+      print(key, ":", value)
+
+
