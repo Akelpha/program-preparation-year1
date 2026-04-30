@@ -1,3 +1,4 @@
+import math
 class Calcul :
     def __init__(self):
         pass
@@ -15,6 +16,10 @@ class Calcul :
             return n+Calcul.somme(n-1)
         
     @staticmethod
-    def testPrim(n):
+    def testPrim(n,m):
+        if math.gcd(n,m) == 1:
+            return True
+        else:
+            return False
         
-        
+    
