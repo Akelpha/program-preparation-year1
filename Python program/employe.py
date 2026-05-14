@@ -33,7 +33,7 @@ emp2 = Employe("E002", "Benali", "Sara", 35, 7, 8000)     # < 10 ans → +5%
 emp3 = Employe("E003", "Chraibi", "Omar", 45, 15, 12000)  # >= 10 ans → +10%
 
 emp1.augmenter_salaire()
-emp1.afficher_employe()
+emp1.afficher_employe() 
 emp2.augmenter_salaire()
 emp2.afficher_employe()
 emp3.augmenter_salaire()
