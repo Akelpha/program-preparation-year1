@@ -48,8 +48,11 @@ class Etudiant:
 class GestionEtud(Etudiant):
     def __init__(self, name, firstname, matricule, age, birthday, school,classroom,fiche):
         super().__init__(name, firstname, matricule, age, birthday, school)
-        self.classRoom = classroom
+        self.classRoom = []
         self.fiche = fiche
+
+        
+
 
 
 
